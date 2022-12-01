@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__":
-    from variable_load_5 import a
+import hidden_4
 
-    print(a)
+if __name__ == "__main__":
+    for i in dir(hidden_4):
+        if i[:2] != "__":
+            print("{:s}".format(i))
